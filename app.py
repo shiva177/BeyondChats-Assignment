@@ -14,7 +14,7 @@ def extract_username_from_url(url: str) -> str:
 if "dark_mode" not in st.session_state:
     st.session_state.dark_mode = True  # Default to dark mode
 
-# ✅ Theme toggle
+# Theme Toggle Light/Dark Mode
 with st.sidebar:
     st.title("🧰 Settings")
     if st.toggle("🌗 Toggle Light/Dark Mode", value=st.session_state.dark_mode):
