@@ -98,7 +98,8 @@ if st.button("Generate Persona"):
                 # ✅ Limit to 30 to avoid token overflow
                 trimmed = cleaned[:30]
                 persona = build_user_persona_llm(trimmed, username)
-                st.markdown(persona)
+                st.markdown(persona, unsafe_allow_html=True)
+
 
                 save_to_file(username, cleaned)
                 st.download_button("📄 Download Persona", persona, file_name=f"{username}_persona.txt")
