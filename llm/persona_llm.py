@@ -38,9 +38,6 @@ Then for each of the following:
 
 - Interested in AI and spatial computing [🔗](https://reddit.com/r/ai/comments/abc)
 
-
-⚠️ Do NOT show full URLs in the text body. Only use the icon-style link (🔗) to keep it clean.
-
 ---
 
 Here is the cleaned Reddit data:
