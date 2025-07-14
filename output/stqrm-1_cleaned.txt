@@ -1,0 +1,22 @@
+[POST]
+Title: BRAINROT
+Text: These new trending audios like phonk and those overplayed songs, are definitely peak brainrot.
+Subreddit: Mindfulness
+URL: https://reddit.com/r/Mindfulness/comments/1lzd9kw/brainrot/
+
+[POST]
+Title: I need help with my situation
+Text: I’m a student trying to build a career in ML and data science. However, my parents have been pressuring me to become a civil servant which is completely outside my area of interest and all. This has been an issue since my childhood and now its becoming a really huge matter. So please help me, what should I do?
+Subreddit: Nepal
+URL: https://reddit.com/r/Nepal/comments/1l6czs1/i_need_help_with_my_situation/
+
+[COMMENT]
+Text: what if i start buying my field's book n dont give a shit abt their thing
+Subreddit: Nepal
+URL: https://reddit.com/r/Nepal/comments/1l6czs1/i_need_help_with_my_situation/mwnxvo4/
+
+[COMMENT]
+Text: thanks for the advice hope u r doing well in ur field
+Subreddit: Nepal
+URL: https://reddit.com/r/Nepal/comments/1l6czs1/i_need_help_with_my_situation/mwnx505/
+
