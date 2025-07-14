@@ -1,11 +1,11 @@
 from praw.models import MoreComments
+import praw
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def get_user_data(username):
-    import praw
-    import os
-    from dotenv import load_dotenv
-    load_dotenv()
-
     reddit = praw.Reddit(
         client_id=os.getenv("REDDIT_CLIENT_ID"),
         client_secret=os.getenv("REDDIT_SECRET"),
@@ -18,16 +18,22 @@ def get_user_data(username):
     comments = []
 
     for submission in user.submissions.new(limit=None):
-        cleaned = submission.selftext.strip() or "[removed]"
-        posts.append(
-            f"[POST by u/{username}]\nTitle: {submission.title}\nText: {cleaned}\nSubreddit: r/{submission.subreddit}\n"
-        )
-
+        posts.append({
+            "type": "post",
+            "title": submission.title.strip(),
+            "text": submission.selftext.strip() if submission.selftext else "[removed]",
+            "subreddit": str(submission.subreddit),
+            "url": f"https://reddit.com{submission.permalink}",
+            "id": submission.id,
+        })
 
     for comment in user.comments.new(limit=None):
-        cleaned = comment.body.strip() or "[removed]"
-        comments.append(
-            f"[COMMENT by u/{username}]\n{cleaned}\nSubreddit: r/{comment.subreddit}\n"
-        )
+        comments.append({
+            "type": "comment",
+            "body": comment.body.strip() if comment.body else "[removed]",
+            "subreddit": str(comment.subreddit),
+            "url": f"https://reddit.com{comment.permalink}",
+            "id": comment.id,
+        })
 
     return posts + comments
