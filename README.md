@@ -1,3 +1,9 @@
+#👤 Author
+Shivam Kumar
+Final Year, IIIT Allahabad
+
+---
+
 # 🧠 Reddit-Based User Persona Generator
 
 This project builds a user persona by analyzing Reddit user activity (posts and comments) using LLMs like OpenAI GPT. The generated persona includes motivations, frustrations, habits, goals, and inferred traits — **with proper citations**.
