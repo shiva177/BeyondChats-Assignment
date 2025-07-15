@@ -8,10 +8,11 @@ This project builds a user persona by analyzing Reddit user activity (posts and 
 
 - ✅ Scrapes Reddit user data via PRAW (posts + comments)
 - ✅ Cleans and organizes content
-- ✅ Builds a rich user persona using OpenAI's GPT
+- ✅ Uses LLM (OpenAI GPT) to generate user personas
 - ✅ Adds citation icons (🔗) for each insight from Reddit source
 - ✅ Simple interface using Streamlit
 - ✅ Supports any Reddit user profile link
+- ✅ Sample personas provided
 
 ## Tech Stack
 -Python,
